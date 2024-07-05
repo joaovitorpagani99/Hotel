@@ -1,0 +1,32 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+li {
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    gap: 10px;
+}
+
+li a:hover {
+    color: #f1356d;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.9s;
+}

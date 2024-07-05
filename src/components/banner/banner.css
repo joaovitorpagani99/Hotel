@@ -1,0 +1,43 @@
+section {
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+img {
+    margin: 10px auto;
+    width: 80%;
+    height: auto;
+    max-height: 95%;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: white;
+    width: 30%;
+    height: 25vh;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    padding: 10px;
+    top: 41%;
+    right: 50%;
+}
+
+button {
+    margin-top: 14px;
+    border: none;
+    border-radius: 50px;
+    width: 25%;
+    height: 35px;
+    background-color: #ccc;
+}
+
+button:hover {
+    background-color: #ddd;
+    color: violet;
+}
