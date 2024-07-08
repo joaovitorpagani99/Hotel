@@ -50,8 +50,8 @@
 }
 
 .container img {
-    width: 75%;
-    height: 75%;
+    width: 200px;
+    height: 150px;
     margin-left: 50px;
 }
 
@@ -67,7 +67,6 @@
 
 .containerImg p {
     text-align: justify;
-    font-weight: bold;
     color: black;
     display: flex;
     justify-content: center;

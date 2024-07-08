@@ -5,31 +5,32 @@ import imagem1 from '../../assets/hotel1.jpg';
 import imagem2 from '../../assets/hotel2.jpg';
 import imagem3 from '../../assets/hotel3.jpg';
 
-function Galeria() {
+const hoteis = [
+    { cod: 1, nome: "Hotel Chinzanso Tokyo", texto: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.", img: imagem1 },
+    { cod: 2, nome: "Pousada Villa D'Biagy", texto: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.", img: imagem2 },
+    { cod: 3, nome: "Natal Dunnas Hotel.", texto: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.", img: imagem3 }
+]
+
+function Galeria(props) {
+
+    const cardHoteis = hoteis.map((hotel) => {
+        return (
+            <div className="containerImg" key={hotel.cod}>
+                <img src={hotel.img} alt="Imagem de uma viagem" />
+                <h4>{hotel.nome}</h4>
+                <p>{hotel.texto}</p>
+            </div>
+        );
+    });
     return (
         <section className="galeria">
             <figure className="fundoGaleria">
-                <h1>Hoteis perdeitos para 2024</h1>
+                <h1>{props.titulo}</h1>
                 <img src={galeriaImg} alt="Imagem de uma viagem" />
             </figure>
             <div className="container">
-                <div className="containerImg">
-                    <img src={imagem1} alt="Imagem de uma viagem" />
-                    <h4>Hotel Chinzanso Tokyo</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                </div>
-                <div className="containerImg">
-                    <img src={imagem2} alt="Imagem de uma viagem" />
-                    <h4>Hotel Chinzanso Tokyo</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                </div>
-                <div className="containerImg">
-                    <img src={imagem3} alt="Imagem de uma viagem" />
-                    <h4>Hotel Chinzanso Tokyo</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                </div>
+                {cardHoteis}
             </div>
-
         </section>
     )
 }

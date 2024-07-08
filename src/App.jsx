@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import Header from './components/header/header'
+import React from 'react'
+import NavBar from './components/Navbar/navbar'
 import Banner from './components/banner/banner'
 import Galeria from './components/galeria/galeria'
 import Footer from './components/footer/footer'
@@ -8,9 +8,9 @@ function App() {
 
   return (
     <>
-      <Header />
+      <NavBar />
       <Banner />
-      <Galeria />
+      <Galeria titulo="Hoteis perfeitos para 2024" />
       <Footer />
     </>
   )
