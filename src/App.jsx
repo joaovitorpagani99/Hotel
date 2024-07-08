@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <NavBar />
+      <NavBar titulo="Pagani Hotelaria" />
       <Banner />
       <Galeria titulo="Hoteis perfeitos para 2024" />
       <Footer />
