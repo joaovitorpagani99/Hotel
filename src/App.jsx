@@ -1,17 +1,26 @@
 import React from 'react'
-import NavBar from './components/Navbar/navbar'
-import Banner from './components/banner/banner'
-import Galeria from './components/galeria/galeria'
-import Footer from './components/footer/footer'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from './pages/Home'
+import NotFound from './pages/NotFound';
+import NavBar from './components/Navbar/Navbar';
+import Contato from './pages/Contato';
+import Cadastro from './pages/Cadastro';
+import Login from './pages/Login';
 
 function App() {
 
   return (
     <>
-      <NavBar titulo="Pagani Hotelaria" />
-      <Banner />
-      <Galeria titulo="Hoteis perfeitos para 2024" />
-      <Footer />
+      <BrowserRouter>
+        <NavBar titulo="Pagani Hotelaria" />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/cadastro' element={<Cadastro />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/contato' element={<Contato />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

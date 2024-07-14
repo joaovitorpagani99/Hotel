@@ -1,0 +1,57 @@
+.containerPrincipalContato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 89vh;
+}
+
+.containerContato {
+    gap: 10px;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    background-color: aliceblue;
+}
+
+.containerContato label {
+    width: 30%;
+    margin-right: 80px;
+    text-align: left;
+}
+
+.containerContato input,
+.containerContato textarea {
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.containerContato input {
+    height: 30px;
+}
+
+.containerContato textarea {
+    height: 100px;
+}
+
+.botaoEnviar {
+    margin-top: 10px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.botaoEnviar:hover {
+    background-color: #45a049;
+}

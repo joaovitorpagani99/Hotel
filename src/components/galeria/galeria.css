@@ -33,10 +33,9 @@
 }
 
 .container {
-    overflow-x: auto;
     position: absolute;
-    top: 250px;
-    left: 190px;
+    top: 200px;
+    left: 290px;
     width: 75%;
     height: 50vh;
     display: flex;

@@ -9,14 +9,14 @@ section {
 }
 
 img {
+    border-radius: 10px;
     margin: 10px auto;
-    width: 80%;
+    width: 85%;
     height: auto;
-    max-height: 95%;
+    max-height: 85%;
 }
 
-.card {
-    border: 1px solid #ccc;
+section .card {
     border-radius: 20px;
     background-color: white;
     width: 30%;
@@ -29,7 +29,8 @@ img {
 }
 
 button {
-    margin-top: 14px;
+    margin-top: 25px;
+    margin-right: 10px;
     border: none;
     border-radius: 50px;
     width: 25%;

@@ -3,12 +3,17 @@ import "./footer.css";
 
 function Footer() {
     return (
-        <footer>
-            <div className="footer-content">
-                <p>© 2023 Minha Empresa. Todos os direitos reservados.</p>
-                <p>Contato: contato@minhaempresa.com</p>
+        <div className="wrapper">
+            <div className="content">
+                {/* Conteúdo principal da página */}
             </div>
-        </footer>
+            <footer>
+                <div className="footer-content">
+                    <p>© 2023 Minha Empresa. Todos os direitos reservados.</p>
+                    <p>Contato: contato@minhaempresa.com</p>
+                </div>
+            </footer>
+        </div>
     );
 }
 
